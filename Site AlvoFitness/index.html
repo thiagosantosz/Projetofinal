@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/styles.css" type="text/css" rel="stylesheet">
+    <title>AlvoFitness</title>
+</head>
+
+<body>
+    <script language="JavaScript">
+        function abremenu(){
+            document.getElementById("menu-lateral").style.width="40%";
+            document.getElementById("menu-lateral").style.visibility="visible";
+            document.getElementById("botao-hamburg-abre").style.display="none";
+            document.getElementById("botao-hamburg-fecha").style.display="block";
+        }
+
+        function fechamenu(){
+            document.getElementById("menu-lateral").style.width="0%";
+            document.getElementById("menu-lateral").style.visibility="hidden";
+            document.getElementById("botao-hamburg-abre").style.display="block";
+            document.getElementById("botao-hamburg-fecha").style.display="none";
+        }
+    </script>
+    <!--Seção de cabeçalho-->
+    <header>
+        <!--Logo-->
+        <div class="box-img-logo">
+            <img class="img-logo" src="Imagens/Logo.png" alt="Logo do Site">
+        </div>
+        
+        <h1>ALVOFITNESS<br>PERSONAL TRAINER</h1>
+               
+        <nav>
+            <span id="botao-hamburg-abre" onClick="abremenu()">&#9776;</span>
+            <span id="botao-hamburg-fecha" onClick="fechamenu()">&#88;</span>
+            <a href="#inicio" class="nav-links">Início |</a> <!--Voltar ao inicio-->
+            <a href="#Sobre" class="nav-links">Sobre |</a> <!--Escrever sobre o profisional-->
+            <a href="#Beneficio" class="nav-links">Benefícios |</a> <!--Escrever sobre os beneficios que cada treino oferece-->
+            <a href="#Atividade" class="nav-links">Atividades |</a> <!--Detalhar cada tipo de treino e exercicios-->
+            <a href="#Plano" class="nav-links">Planos |</a> <!--Detalhar cada tipo de planos-->
+            <a href="#Inscricao" class="nav-links">Inscrições |</a> <!--Acrescentar horários-->
+            <a href="#contato" class="nav-links">Contatos</a> <!--Definir contatos, local e Chamada-->
+        </nav>
+
+        <div class="box-pesquisar">
+            <img class="icone-pesquisar" src="Icones/icons8-pesquisar-50.png">
+            <input type="text" name="nome" placeholder="Pesquisar..." required>
+        </div>
+    </header>
+
+    <aside id="menu-lateral">
+         <ul>
+            <li><a href="#inicio" >Início </a> </li><!--Voltar ao inicio-->
+            <li><a href="#Sobre" >Sobre </a> </li><!--Escrever sobre o profisional-->
+            <li><a href="#Beneficio" >Benefícios </a> </li><!--Escrever sobre os beneficios que cada treino oferece-->
+            <li><a href="#Atividade" >Atividades </a> </li><!--Detalhar cada tipo de treino e exercicios-->
+            <li><a href="#Plano" >Planos </a> </li> <!--Detalhar cada tipo de planos-->
+            <li><a href="#Inscricao" >Inscrições </a> </li><!--Acrescentar horários-->
+            <li><a href="#contato" >Contatos</a> </li><!--Definir contatos, local e Chamada-->
+            </ul>
+    </aside>
+    <!--Seção de conteúdo principal-->
+    <main>
+        <!-- Img de capa-->
+        <section id="inicio">
+         <img class="capa" src="/Imagens/Capa1.jpg" alt="Capa do Site">
+        </section>
+        <!--Parte sobre o Profissional-->
+        <section id="Sobre" class="seg-section">
+        <article>
+            
+            <div class="box-profile">
+
+                <h2>PROFISSIONAL LUCAS VITAL<br>TREINE ONDE QUISER, COM RESULTADOS DE VERDADE!</strong></h2>
+                <img class="post-profissional" src="Imagens/Profissional1.jpg" alt="Foto do profissional">
+                <p>Olá, sou <strong>Lucas Vital</strong>, <strong>Personal Trainer</strong> certificado, com mais de <strong>7 anos de experiência</strong> em transformar vidas através do movimento. Meu foco é oferecer <strong>treinos personalizados</strong> que se adaptam ao seu ritmo e objetivo. Atendo de forma <strong>presencial</strong>, com uma <strong>equipe preparada</strong> para acompanhamento direto, e também no formato <strong>online</strong>, ideal para quem busca <strong>flexibilidade</strong> sem abrir mão da <strong>performance e resultados reais</strong>.</p>  
+                
+            </div>
+        
+        </article> 
+        </section>
+
+        <!--Parte de Benefício-->
+        <section id="Beneficio" class="ter-section">
+        <article>
+
+            <div class="box-beneficio">
+                <h2>BENEFÍCIOS</h2>
+                <P>A modalidade presencial seja no parque, na academia, em casa ou via videochamada, 
+                eu Lucas irei adapta o plano de treino às necessidades, objetivos e rotina de cada aluno, trabalhamos com foco em:</P>
+                <img class="post1" src="Imagens/Beneficio1.jpg" alt="Benefício1">
+                <img class="post2"src="Imagens/Beneficio2.jpg" alt="Benefício2">
+                <img class="post3" src="Imagens/Beneficio3.jpg" alt="Benefício3">
+            </div>
+        </article>
+        </section>
+
+        <!--Parte Atividades Físicas-->
+        <section id="Atividade" class="qua-section">
+        <article>
+
+            <div class="box-atividades">
+                <h2>ATIVIDADES FÍSICAS</h2>
+                <p>O papel crucial na formação dos alunos, a escolha dos exercícios corretos é fundamental para garantir a eficácia dos treinos. Abaixo, apresentamos 10 exercícios essenciais que todo personal trainer deve ensinar, abrangendo diferentes grupos musculares e habilidades funcionais.</p>
+                <img src="Imagens/Treino1.JPG" alt="Treino">
+                <img src="Imagens/Treino2.JPG" alt="Treino">
+            </div>
+
+        </article>
+        </section>
+
+        <!--Parte Plano-->
+        <section id="Plano" class="qui-seciton">
+        <article>
+            <div class="box-planos">
+                <h1>PLANOS</h1>
+            </div>
+
+            <div class="card-container">
+            
+                <div class="card">
+                    <img src="Imagens/Plano1.png" alt="Plano 1">
+                    <div class="card-content">
+                    <h3>Plano Silver</h3>
+                    <p>Personal Online - (Mensal)<br>2X Presencial + 18 Online .</p>
+                    <a href="#" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="Imagens/Plano2.png" alt="Plano 2">
+                    <div class="card-content">
+                    <h3>Plano Gold</h3>
+                    <p>Personal Presencial - (Mensal)<br>8X Presencial + 12 Online.</p>
+                    <a href="#" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="Imagens/Plano3.png" alt="Plano 3">
+                    <div class="card-content">
+                    <h3>Plano Diamond</h3>
+                    <p>Personal Presencial - (Mensal)<br>14x Presencial + 14 Online.</p>
+                    <a href="#" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+            
+        </div>
+        </article>
+        </section>
+
+        <!--Parte Inscrição-->
+        <section id="Inscricao" class="ultmato-section">
+        
+        <div class="formulario">
+            <form method="post" action="mailto:gabrielxonelive@outlook.com" enctype="text/plain">
+
+            <!-- Seção Dados Pessoais -->
+            <fieldset>
+                
+                <legend>Dados Pessoais</legend>
+
+                <div>
+                    <!-- Nome -->
+                    <label for = "Nome"> Nome Completo:</label>
+                    <input type = "text" id="nome" name="nome" placeholder="Obrigatório" required/>
+                </div>
+
+                <div>
+                    <!-- Nascimento -->
+                    <label for = "Nascimento"> Data Nascimento:</label>
+                    <input type = "date" id="nascimento" name="nascimento" placeholder="__/__/____" required/>
+                </div>
+
+                <div>
+                    <!-- Sexo-->
+                    <label for = "sexo"> Sexo:</label>
+                    <input type="radio" id="sexo" name="sexo" value="F" checked/> Feminino
+                    <input type="radio" id="sexo" name="sexo" value="M"/> Masculino
+                </div>
+
+                <div>
+                    <!--Situação Conjugal-->
+                    <label for = "estcivil"> </label>
+                </div>
+
+                <div>
+                    <!-- E-mail-->
+                    <label for = "email"> E-mail:</label>
+                    <input type = "text" id="email" name="email" placeholder="examplo@mail.com" required/>
+                </div>
+
+                <div>
+                    <!-- Endereço -->
+                    <label for = "Endereco"> Endereço:</label>
+                    <input type = "text" id="nascimento" name="endereco" placeholder="Obrigatório" required/>
+                </div>
+
+                <div>
+                    <!-- CEP -->
+                    <label for = "CEP"> CEP:</label>
+                    <input type = "text" id="cep" name="cep" placeholder="00000-000" required/>
+                </div>
+
+                <div>
+                    <!-- Cidade -->
+                    <label for = "Cidade"> Cidade:</label>
+                    <input type = "text" id="Cidade" name="Cidade" value="São Paulo" required/>
+                </div>
+
+                <div>
+                    <!--UF-->
+                    <label for = "UF"> UF:</label>
+                    <select type = "uf" name="uf">
+                        <option>AC</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>AL</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MG</option>
+                        <option>MS</option>
+                        <option>PR</option>
+                        <option>PI</option>
+                        <option>PB</option>
+                        <option>PA</option>
+                        <option>PE</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RJ</option>
+                        <option selected>SP</option>
+                        <option>SC</option>
+                    </select>
+                </div>
+
+                <div>
+                    <!-- Contato -->
+                    <label for = "Contato"> Telefone/WhatsApp:</label>
+                    <input type = "text" id="contato" name="contato" placeholder="(11) 00000-0000" required/><br>
+                    <input type="submit" value="ENVIAR"/>
+                </div>
+            </fieldset>
+        </form>
+            
+        </div>
+        </section>
+    </main>
+
+    <!--Seção de rodapé-->
+    <footer style="background:rgb(17, 17, 17); color:#fff; padding:30px 0; text-align:center; font-family:Arial;">
+    <h3 style="margin:0; font-size:22px;">Alvo Fitness</h3>
+    <p style="margin:5px 0 15px; font-size:14px;">Portfólio Profissional • © 2025</p>
+
+    <p style="margin: 0; font-size:14px;">
+        <strong>E-mail:</strong> alvofitness00a@gmail.com<br>
+        <strong>Telefone:</strong> (11) 95614-8448
+    </p>
+
+    <div style="margin-top:15px;">
+        <span style="font-size:16px;">Siga na redes social:</span>
+        <div style="margin-top:8px;">
+            <a href="https://www.instagram.com/alvofitness00a/"><img src="Icones/logoinsta2.png" alt="instagram"/></a>
+           
+        </div>
+    </div>
+    </footer>
+        </article>
+</body>
+</html>
